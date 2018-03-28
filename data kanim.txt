@@ -1,0 +1,437 @@
+var data = [
+        {
+            "hc-key": "id-3700",
+            "value": 0
+        },
+        {
+            // Aceh
+            "hc-key": "id-ac",
+            "value": 6,
+            "I":"Kantor Imigrasi Kelas I Banda Aceh",
+            "II":"Kantor Imigrasi Kelas II LANGSA",
+            "III":"Kantor Imigrasi Kelas II LHOKSEUMAWE",
+            "IV":"Kantor Imigrasi Kelas II MEULABOH",
+            "V":"Kantor Imigrasi Kelas II SABANG",
+            "VI":"Kantor Imigrasi Kelas III TAKENGON",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Sumatera Utara   
+            "hc-key": "id-su",
+            "value": 6,
+            "I":"Kantor Imigrasi Kelas I Khusus MEDAN",
+            "II":"Kantor Imigrasi Kelas I POLONIA",
+            "III":"Kantor Imigrasi Kelas II BELAWAN",
+            "IV":"Kantor Imigrasi Kelas II PEMATANG SIANTAR",
+            "V":"Kantor Imigrasi Kelas II SIBOLGA",
+            "VI":"Kantor Imigrasi Kelas II TG. BALAI ASAHAN",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Sumatera Barat
+            "hc-key": "id-sb",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I PADANG",
+            "II":"Kantor Imigrasi Kelas II AGAM",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Riau
+            "hc-key": "id-ri",
+            "value": 7,
+            "I":"Kantor Imigrasi Kelas I PEKANBARU",
+            "II":"Kantor Imigrasi Kelas II BAGAN SIAPI API",
+            "III":"Kantor Imigrasi Kelas II BENGKALIS",
+            "IV":"Kantor Imigrasi Kelas II DUMAI",
+            "V":"Kantor Imigrasi Kelas II SELAT PANJANG",
+            "VI":"Kantor Imigrasi Kelas II SIAK",
+            "VII":"Kantor Imigrasi Kelas II TEMBILAHAN",
+            "VIII":""
+        },
+        {
+            // Kepulauan Riau
+            "hc-key": "id-kr",
+            "value": 8,
+            "I":"Kantor Imigrasi Kelas I Khusus BATAM",
+            "II":"Kantor Imigrasi Kelas I TANJUNG PINANG",
+            "III":"Kantor Imigrasi Kelas II BELAKANG PADANG",
+            "IV":"Kantor Imigrasi Kelas II RANAI",
+            "V":"Kantor Imigrasi Kelas II TANJUNG UBAN",
+            "VI":"Kantor Imigrasi Kelas II TG. BALAI KARIMUN",
+            "VII":"Kantor Imigrasi Kelas III DABO SINGKEP",
+            "VIII":"Kantor Imigrasi Kelas III TAREMPA"
+        },
+        {
+            // Jambi
+            "hc-key": "id-ja",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I JAMBI",
+            "II":"Kantor Imigrasi Kelas II KUALA TUNGKAL",
+            "III":"Kantor Imigrasi Kelas III KERINCI",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Bengkulu
+            "hc-key": "id-be",
+            "value": 1,
+            "I":"Kantor Imigrasi Kelas I BENGKULU",
+            "II":"",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Sumatera Selatan
+            "hc-key": "id-sl",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I PALEMBANG",
+            "II":"Kantor Imigrasi Kelas II MUARA ENIM",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Bangka Belitung
+            "hc-key": "id-bb",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I PANGKAL PINANG",
+            "II":"Kantor Imigrasi Kelas II TANJUNG PANDAN",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Lampung
+            "hc-key": "id-1024",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I BANDAR LAMPUNG",
+            "II":"Kantor Imigrasi Kelas III KALIANDA",
+            "III":"Kantor Imigrasi Kelas III KOTABUMI",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Banten
+            "hc-key": "id-bt",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I SERANG",
+            "II":"Kantor Imigrasi Kelas I TANGERANG",
+            "III":"Kantor Imigrasi Kelas II CILEGON",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Jakarta
+            "hc-key": "id-jk",
+            "value": 7,
+            "I":"Kantor Imigrasi Kelas I Khusus BANDARA SOEKARNO - HATTA",
+            "II":"Kantor Imigrasi Kelas I Khusus JAKARTA BARAT",
+            "III":"Kantor Imigrasi Kelas I Khusus JAKARTA SELATAN",
+            "IV":"Kantor Imigrasi Kelas I JAKARTA PUSAT",
+            "V":"Kantor Imigrasi Kelas I JAKARTA TIMUR",
+            "VI":"Kantor Imigrasi Kelas I JAKARTA UTARA",
+            "VII":"Kantor Imigrasi Kelas I TANJUNG PRIOK",
+            "VIII":""
+        },
+        {
+            // Jawa Barat
+            "hc-key": "id-jr",
+            "value": 8,
+            "I":"Kantor Imigrasi Kelas I BANDUNG",
+            "II":"Kantor Imigrasi Kelas I BOGOR",
+            "III":"Kantor Imigrasi Kelas II CIREBON",
+            "IV":"Kantor Imigrasi Kelas II DEPOK",
+            "V":"Kantor Imigrasi Kelas II KARAWANG",
+            "VI":"Kantor Imigrasi Kelas II SUKABUMI",
+            "VII":"Kantor Imigrasi Kelas II TASIKMALAYA",
+            "VIII":"Kantor Imigrasi Kelas II BEKASI"
+        },
+        {
+            // Jawa Tengah
+            "hc-key": "id-jt",
+            "value": 6,
+            "I":"Kantor Imigrasi Kelas I SEMARANG",
+            "II":"Kantor Imigrasi Kelas I SURAKARTA",
+            "III":"Kantor Imigrasi Kelas II CILACAP",
+            "IV":"Kantor Imigrasi Kelas II PATI",
+            "V":"Kantor Imigrasi Kelas II PEMALANG",
+            "VI":"Kantor Imigrasi Kelas II WONOSOBO",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Jawa Timur
+            "hc-key": "id-ji",
+            "value": 8,
+            "I":"Kantor Imigrasi Kelas I Khusus SURABAYA",
+            "II":"Kantor Imigrasi Kelas I MALANG",
+            "III":"Kantor Imigrasi Kelas I TANJUNG PERAK",
+            "IV":"Kantor Imigrasi Kelas II BLITAR",
+            "V":"Kantor Imigrasi Kelas II JEMBER",
+            "VI":"Kantor Imigrasi Kelas II MADIUN",
+            "VII":"Kantor Imigrasi Kelas III KEDIRI",
+            "VIII":"Kantor Imigrasi Kelas III PAMEKASAN"
+        },
+        {
+            // Yogyakarta
+            "hc-key": "id-yo",
+            "value": 1,
+            "I":"Kantor Imigrasi Kelas I YOGYAKARTA",
+            "II":"",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Bali
+            "hc-key": "id-ba",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I Khusus NGURAH RAI",
+            "II":"Kantor Imigrasi Kelas I DENPASAR",
+            "III":"Kantor Imigrasi Kelas II SINGARAJA",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+
+        },
+        {
+            // Nusa Tenggara Barat
+            "hc-key": "id-nb",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I MATARAM",
+            "II":"Kantor Imigrasi Kelas II SUMBAWA BESAR",
+            "III":"Kantor Imigrasi Kelas III BIMA",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Nusa Tenggara Timur
+            "hc-key": "id-nt",
+            "value": 4,
+            "I":"Kantor Imigrasi Kelas I KUPANG",
+            "II":"Kantor Imigrasi Kelas II ATAMBUA",
+            "III":"Kantor Imigrasi Kelas II MAUMERE",
+            "IV":"Kantor Imigrasi Kelas III LABUAN BAJO",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Kalimantan Barat
+            "hc-key": "id-kb",
+            "value": 6,
+            "I":"Kantor Imigrasi Kelas I PONTIANAK",
+            "II":"Kantor Imigrasi Kelas II ENTIKONG",
+            "III":"Kantor Imigrasi Kelas II SAMBAS",
+            "IV":"Kantor Imigrasi Kelas II SANGGAU",
+            "V":"Kantor Imigrasi Kelas II SINGKAWANG",
+            "VI":"Kantor Imigrasi Kelas III PUTUSSIBAU",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Kalimantan Timur
+            "hc-key": "id-ki",
+            "value": 5,
+            "I":"Kantor Imigrasi Kelas I BALIKPAPAN",
+            "II":"Kantor Imigrasi Kelas I SAMARINDA",
+            "III":"Kantor Imigrasi Kelas II NUNUKAN",
+            "IV":"Kantor Imigrasi Kelas II TARAKAN",
+            "V":"Kantor Imigrasi Kelas III TANJUNG REDEB",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Kalimantan Tengah
+            "hc-key": "id-kt",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I PALANGKARAYA",
+            "II":"Kantor Imigrasi Kelas II SAMPIT",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Kalimantan Selatan
+            "hc-key": "id-ks",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I BANJARMASIN",
+            "II":"Kantor Imigrasi Kelas II BATULICIN",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Sulawesi Utara
+            "hc-key": "id-sw",
+            "value": 4,
+            "I":"Kantor Imigrasi Kelas I MANADO",
+            "II":"Kantor Imigrasi Kelas II BITUNG",
+            "III":"Kantor Imigrasi Kelas II TAHUNA",
+            "IV":"Kantor Imigrasi Kelas III KOTAMOBAGU",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Sulawesi Tengah
+            "hc-key": "id-st",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I PALU",
+            "II":"Kantor Imigrasi Kelas III BANGGAI",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Gorontalo
+            "hc-key": "id-go",
+            "value": 1,
+            "I":"Kantor Imigrasi Kelas I GORONTALO",
+            "II":"",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+
+        },
+        {
+            // Sulawesi Barat
+            "hc-key": "id-sr",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas II MAMUJU",
+            "II":"Kantor Imigrasi Kelas II POLEWALI MANDAR",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Sulawesi Selatan
+            "hc-key": "id-se",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I MAKASSAR",
+            "II":"Kantor Imigrasi Kelas II PARE PARE",
+            "III":"Kantor Imigrasi Kelas III PALOPO",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            //Sulawesi Tenggara
+            "hc-key": "id-sg",
+            "value": 3,
+            "I":"Kantor Imigrasi Kelas I KENDARI",
+            "II":"Kantor Imigrasi Kelas III BAU-BAU",
+            "III":"Kantor Imigrasi Kelas III WAKATOBI",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Maluku Utara
+            "hc-key": "id-la",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I TERNATE",
+            "II":"Kantor Imigrasi Kelas I TOBELO",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Maluku
+            "hc-key": "id-ma",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas I AMBON",
+            "II":"Kantor Imigrasi Kelas II TUAL",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        },
+        {
+            // Papua Barat
+            "hc-key": "id-ib",
+            "value": 2,
+            "I":"Kantor Imigrasi Kelas II MANOKAWARI",
+            "II":"Kantor Imigrasi Kelas II SORONG",
+            "III":"",
+            "IV":"",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        }, 
+        {
+            // Papua
+            "hc-key": "id-pa",
+            "value": 4,
+            "I":"Kantor Imigrasi Kelas I JAYAPURA",
+            "II":"Kantor Imigrasi Kelas II BIAK",
+            "III":"Kantor Imigrasi Kelas II MERAUKE",
+            "IV":"Kantor Imigrasi Kelas III TEMBAGA PURA",
+            "V":"",
+            "VI":"",
+            "VII":"",
+            "VIII":""
+        }
+    ];
